@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <style>
+            body {
+                background: rgb(15, 137, 242);
+                color: rgb(45, 45, 45);
+                padding: 70px 0;
+                font-family: "Segoe Script", "Trebuchet MS";
+            }
+            header {
+                font-size: 1.5em;
+                font-weight: bold;
+            }
+            #all-contents {
+                max-width: 800px;
+                margin: auto;
+            }
+    
+            /* navigation menu */
+            nav {
+                background: rgb(154, 154, 154);
+                margin: 0 auto;
+                display: flex;
+                padding: 10px;
+            }
+            nav header {
+                display: flex;
+                align-items: center;
+                color: rgb(255, 255, 255);
+                flex: 1;
+            }
+            nav ul {
+                list-style-image: none;
+            }
+            nav li {
+                display: inline-block;
+                padding: 0 10px;
+            }
+            nav a {
+                text-decoration: none;
+                color: #fff;
+            }
+    
+            /* main container area beneath menu */
+            main {
+                background: rgb(250, 250, 250);
+                display: flex;
+            }
+            .sidebar {
+                margin-right: 25px;
+                padding: 10px;
+            }
+            .sidebar img {
+                width: 200px;
+                padding: 70px 0;
+            }
+            .content {
+                flex: 1;
+            }
+            .interests header {
+                font-size: 1.25em;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div id="all-contents">
+            <nav>
+                <header>My Info</header>
+                <ul>
+                    <li><a href="index.html" style="font-size:125%;">Home</a></li>
+                    <li><a href="portfolio.html" style="font-size:125%;">Portfolio</a></li>
+                </ul>
+            </nav>
+            
+            <main>
+                <div class="sidebar">
+                    <img src="https://i.imgur.com/wFIIdgG.png">
+                </div>
+                <div class="content" >
+                    <h1>Jacob Poirrier</h1>
+                    <p>Student at <a href="http://www.universityview.academy">University View Academy</a>.</p>
+                    <div class="interests">
+                        <h2>Interests</h2>
+                        <ul>
+                            <li>Video Games</li>
+                            <li>Cars</li>
+                            <li>Coding</li>
+                            <li>Tech</li>
+                            <li>Animating</li>
+                            <li>Physics Simulation</li>
+                        </ul>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>
