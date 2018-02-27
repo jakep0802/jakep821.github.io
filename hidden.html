@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hidden Webpage</title>
+        <style>
+            body {
+                background: rgb(202, 64, 30);
+                color: rgb(45, 45, 45);
+                padding: 70px 0;
+                font-family: "Segoe Script", "Trebuchet MS";
+            }
+            header {
+                font-size: 1.5em;
+                font-weight: bold;
+            }
+            #all-contents {
+                max-width: 800px;
+                margin: auto;
+            }
+    
+            /* navigation menu */
+            nav {
+                background: rgb(154, 154, 154);
+                margin: 0 auto;
+                display: flex;
+                padding: 10px;
+            }
+            nav header {
+                display: flex;
+                align-items: center;
+                color: rgb(255, 255, 255);
+                flex: 1;
+            }
+            nav ul {
+                list-style-image: none;
+            }
+            nav li {
+                display: inline-block;
+                padding: 0 10px;
+            }
+            nav a {
+                text-decoration: none;
+                color: #fff;
+            }
+    
+            /* main container area beneath menu */
+            main {
+                background: rgb(250, 250, 250);
+                display: flex;
+            }
+            .sidebar {
+                margin-right: 25px;
+                padding: 10px;
+            }
+            .sidebar img {
+                width: 200px;
+                padding: 70px 0;
+            }
+            .content {
+                flex: 1;
+            }
+            .interests header {
+                font-size: 1.25em;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div id="all-contents">
+            <nav>
+                <header>Hidden Webpage</header>
+                <ul>
+                    <li><a href="index.html" style="font-size:125%;">Home</a></li>
+                </ul>
+            </nav>
+            
+            <main>
+                <div class="sidebar">
+                    <img src="">
+                </div>
+                <div class="content" >
+                    <h1>Favorite Things To-Do</h1>
+                    <p>My favorite things to-do are to play Minecraft, play Forza Horizon 3, Code in HTML, and animate.</p>
+                    <div class="interests">
+                        <h2>Animations:</h2>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/oANnJK6qc1Q?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/-X8-H8kGeZc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/t-NXKvv6zDo?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/1oigolCENQI?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>
