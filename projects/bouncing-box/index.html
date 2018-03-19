@@ -60,7 +60,9 @@
 				position = position + (speed * direction);
 				if(position > boardWidth) {
 					direction = -1;
-				} else {
+				}
+				
+				if(position < 0) {
 					direction = 1;
 				}
 				box.css('left', position);
@@ -71,7 +73,7 @@
 			handleBoxClick = function() {
 				// TODO 4 / 5
 				speed = speed + 3;
-				position = 0;
+				position = 0 + position;
 				points = points + 1;
 				box.text(points);
 			};
