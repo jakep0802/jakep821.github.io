@@ -39,6 +39,7 @@
 			var boardWidth;
 			var update;
 			var handleBoxClick;
+			var boardHeight;
 
 			// jQuery stuff setup for you
 			box = $('.box');
@@ -54,6 +55,7 @@
 			points = 0;
 			speed = 10;
 			direction = 1;
+			boardHeight = $(window).height();
 			
 			update = function() {
 				// TODO 3 / 6 / 7 / 8
