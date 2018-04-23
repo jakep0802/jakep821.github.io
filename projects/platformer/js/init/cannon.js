@@ -18,10 +18,14 @@
     cannon.init = function (game) {
         ////////////////////////////////////////////////////////////////////////
         // ALL YOUR CODE GOES BELOW HERE ///////////////////////////////////////
+        /** Comment from Ben:
+        You had these as "create.cannon.onTop" etc...
+        which was giving you errors so I've fixed them :)
+        */
         
-        create.cannon.onTop(300);
-        create.cannon.onRight(300);
-        create.cannon.onLeft(300);
+        cannon.create.onTop(300); 
+        cannon.create.onRight(300);
+        cannon.create.onLeft(300);
         
         // ALL YOUR CODE GOES ABOVE HERE ///////////////////////////////////////
         ////////////////////////////////////////////////////////////////////////
