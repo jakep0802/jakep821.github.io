@@ -96,14 +96,22 @@
                         
                         // TODO 6 : YOUR CODE STARTS HERE //////////////////////
                         
-                        if ( / * test for right-side * / ) {
+                        if (circle.x > canvas.width + circle.radius) {
                             // your code to place circle exactly off the stage at the left-side //
-                        } else if ( / * test for left-side * / ) {
+                            circle.x = 0 - circle.radius;
+                            
+                        } else if (circle.x < 0 - circle.radius ) {
                             // your code to place circle exactly off the stage at the right-side //
-                        } if ( / * test for top * / ) {
+                            circle.x = canvas.width + circle.radius;
+                        }
+                        
+                        if (circle.y < 0 - circle.radius ) {
                             // code to place circle exactly off the stage at the bottom //
-                        } else if ( / * test for bottom * / ) {
+                            circle.y = canvas.height + circle.radius;
+                            
+                        } else if ( circle.y > canvas.height + circle.radius ) {
                             // your code to place circle exactly off the stage at the top //
+                            circle.y = 0 - circle.radius;
                         }
                         
                         // YOUR TODO 6 CODE ENDS HERE //////////////////////////
