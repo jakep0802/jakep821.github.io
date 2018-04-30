@@ -65,14 +65,14 @@
                  *
                  * Here we want to run our loop 100 times to create 100 circles. What should our start and end value be?
                  */
-                for (var i = start; i < end; i++) {
+                for (var i = 0; i < 100; i++) {
                     // TODO 3 : YOUR CODE STARTS HERE //////////////////////////
-                    circle = draw.randomCircleInArea(canvas, true, true, '#999', 2);
-				
+                    circle = draw.randomCircleInArea(canvas, true, false, '#999', 2);
+					
                     if (circle.alpha < .2) {
-	                    draw.blurFilterOn(circle);
+                    	draw.blurFilterOn(circle);
                     }
-
+    
                     physikz.addRandomVelocity(circle, canvas);
                     circles.push(circle);
                     view.addChild(circle);
@@ -110,7 +110,7 @@
                         if (circle.y > areaHeight) {
                             circle.y = -circle.radius;
                             
-                        } else if (circle.y < areaHeigt) {
+                        } else if (circle.y < areaHeight) {
                             circle.y = +circle.radius;
                             
                         }
