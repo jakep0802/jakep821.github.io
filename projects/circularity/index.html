@@ -94,25 +94,16 @@
                         // TODO 5 : Update the circles position //
                         physikz.updatePosition(circle);
                         
-                        // TODO 6 :g YOUR CODE STARTS HERE //////////////////////
-                        var radius = circle.radius;
-                        var areaWidth = canvas.width + radius;
-                        var areaHeight = canvas.height + radius;
+                        // TODO 6 : YOUR CODE STARTS HERE //////////////////////
                         
-                        if (circle.x > areaWidth) {
-                            circle.x = -circle.radius;
-                            
-                        } else if (circle.x < areaWidth) {
-                            circle.x = +circle.radius;
-                            
-                        }
-                        
-                        if (circle.y > areaHeight) {
-                            circle.y = -circle.radius;
-                            
-                        } else if (circle.y < areaHeight) {
-                            circle.y = +circle.radius;
-                            
+                        if ( / * test for right-side * / ) {
+                            // your code to place circle exactly off the stage at the left-side //
+                        } else if ( / * test for left-side * / ) {
+                            // your code to place circle exactly off the stage at the right-side //
+                        } if ( / * test for top * / ) {
+                            // code to place circle exactly off the stage at the bottom //
+                        } else if ( / * test for bottom * / ) {
+                            // your code to place circle exactly off the stage at the top //
                         }
                         
                         // YOUR TODO 6 CODE ENDS HERE //////////////////////////
