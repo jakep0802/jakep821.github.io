@@ -431,6 +431,18 @@ var background = function (window) {
             var boxEight = draw.rect(25, 1000, '#e8ff4c');
             boxEight.x = 1425
             background.addChild(boxEight);
+            
+            var controlBackground = draw.rect(1440, 45, '#1a1a1a');
+            controlBackground.y = 350;
+            background.addChild(controlBackground);
+            
+            var floor = draw.rect(1440, 10,'#404040');
+            floor.y = 341;
+            background.addChild(floor);
+            
+            var scoreBackground = draw.rect(300, 25, '#1a1a1a');
+            scoreBackground.x = 1230;
+            background.addChild(scoreBackground);
             // TODO: 3 - Add a moon and starfield
             
             
