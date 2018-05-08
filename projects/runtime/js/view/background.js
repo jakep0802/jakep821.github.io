@@ -166,6 +166,271 @@ var background = function (window) {
             slotTwoPort.x = 366;
             slotTwoPort.y = 610;
             background.addChild(slotTwoPort);
+            
+            var boxThree = draw. rect(25, 1000, '#e8ff4c');
+            boxThree.x = 460;
+            background.addChild(boxThree);
+            // Chip left of yellow line
+            var chipTwo = draw.bitmap('img/chip-1.png');
+            background.addChild(chipTwo);
+            chipTwo.x = 500;
+            chipTwo.y = 500;
+            chipTwo.scaleX = 0.2;
+            chipTwo.scaleY = 0.2;
+            // Green lines above chip
+            var lineNinePartOne = draw.line(505, 0, 505, 485, '#006700', 3);
+            background.addChild(lineNinePartOne);
+            
+            var lineNinePartTwo = draw.line(505, 485, 665, 485, '#006700', 3);
+            background.addChild(lineNinePartTwo);
+            
+            var lineNinePartThree = draw.line(665, 485, 665, 1000, '#006700', 3);
+            background.addChild(lineNinePartThree);
+            
+            var lineTenPartOne = draw.line(525, 0, 525, 465, '#006700', 3);
+            background.addChild(lineTenPartOne);
+            
+            var lineTenPartTwo = draw.line(525, 465, 685, 465, '#006700', 3);
+            background.addChild(lineTenPartTwo);
+            
+            var lineTenPartThree = draw.line(685, 465, 685, 1000, '#006700', 3);
+            background.addChild(lineTenPartThree);
+            
+            var ramSlotOne = draw.rect(40, 425, '#000000');
+            ramSlotOne.x = 545;
+            ramSlotOne.y = 20;
+            background.addChild(ramSlotOne);
+            
+            var ramPortOne = draw.rect(20, 405, '#333333');
+            ramPortOne.x = 555;
+            ramPortOne.y = 30;
+            background.addChild(ramPortOne);
+            
+            var ramSlotTwo = draw.rect(40, 425, '#000000');
+            ramSlotTwo.x = 605;
+            ramSlotTwo.y = 20;
+            background.addChild(ramSlotTwo);
+            
+            var ramPortTwo =  draw.rect(20, 405, '#333333');
+            ramPortTwo.x = 615;
+            ramPortTwo.y = 30;
+            background.addChild(ramPortTwo);
+            
+            var lineEleven = draw.line(705, 0, 705, 1000, '#006700', 3);
+            background.addChild(lineEleven);
+            
+            var chipThree = draw.bitmap('img/chip-2.png');
+            background.addChild(chipThree);
+            chipThree.x = 725;
+            chipThree.y = 10;
+            chipThree.scaleX = 0.2;
+            chipThree.scaleY = 0.2;
+            
+            var boxFourPartOne = draw.rect(25, 180, '#e8ff4c');
+            boxFourPartOne.x = 895;
+            background.addChild(boxFourPartOne);
+            
+            var boxFourPartTwo = draw.rect(190, 25, '#e8ff4c');
+            boxFourPartTwo.x = 730;
+            boxFourPartTwo.y = 180;
+            background.addChild(boxFourPartTwo);
+            
+            var boxFourPartThree = draw.rect(25, 700, '#e8ff4c');
+            boxFourPartThree.x = 730;
+            boxFourPartThree.y = 180;
+            background.addChild(boxFourPartThree);
+            
+            var lineTwelvePartOne = draw.line(945, 0, 945, 230, '#006700', 3);
+            background.addChild(lineTwelvePartOne);
+            
+            var lineTwelvePartTwo = draw.line(945, 230, 780, 395, '#006700', 3);
+            background.addChild(lineTwelvePartTwo);
+            
+            var lineTwelvePartThree = draw.line(780, 395, 780, 1000, '#006700', 3);
+            background.addChild(lineTwelvePartThree);
+            
+            var lineThirteenPartOne = draw.line(965, 0, 965, 239, '#006700', 3);
+            background.addChild(lineThirteenPartOne);
+            
+            var lineThirteenPartTwo = draw.line(965, 239, 802, 402, '#006700', 3);
+            background.addChild(lineThirteenPartTwo);
+            
+            var lineThirteenPartThree = draw.line(802, 402, 802, 1000, '#006700', 3);
+            background.addChild(lineThirteenPartThree);
+            
+            var slotThreeBorder = draw.rect(40, 400, '#000000');
+            slotThreeBorder.x = 850;
+            slotThreeBorder.y = 400;
+            background.addChild(slotThreeBorder);
+            
+            var slotThreePort = draw.rect(20, 380, '#333333');
+            slotThreePort.x = 860;
+            slotThreePort.y = 410;
+            background.addChild(slotThreePort);
+            
+            var lineFourteenPartOne = draw.line(985, 0, 985, 248, '#006700', 3);
+            background.addChild(lineFourteenPartOne);
+            
+            var lineFourteenPartTwo = draw.line(985, 248, 910, 325, '#006700', 3);
+            background.addChild(lineFourteenPartTwo);
+            
+            var lineFourteenPartThree = draw.line(910, 325, 910, 1000, '#006700', 3);
+            background.addChild(lineFourteenPartThree);
+            
+            var boxFivePartOne = draw.rect(25, 360, '#e8ff4c');
+            boxFivePartOne.x = 1005;
+            background.addChild(boxFivePartOne);
+            
+            var boxFivePartTwo = draw.rect(75, 25, '#e8ff4c');
+            boxFivePartTwo.x = 930;
+            boxFivePartTwo.y = 335;
+            background.addChild(boxFivePartTwo);
+            
+            var boxFivePartThree = draw.rect(25, 700, '#e8ff4c');
+            boxFivePartThree.x = 930;
+            boxFivePartThree.y = 335;
+            background.addChild(boxFivePartThree);
+            
+            var chipFour = draw.bitmap('img/chip-3.png');
+            background.addChild(chipFour);
+            chipFour.x = 1000;
+            chipFour.y = 650;
+            chipFour.scaleX = 0.2;
+            chipFour.scaleY = 0.2;
+            
+            var lineFifteenPartOne = draw.line(1050, 0, 1050, 515, '#006700', 3);
+            background.addChild(lineFifteenPartOne);
+            
+            var lineFifteenPartTwo = draw.line(1050, 515, 1170, 612, '#006700', 3);
+            background.addChild(lineFifteenPartTwo);
+            
+            var lineFifteenPartThree = draw.line(1170, 612, 1170, 1000, '#006700', 3);
+            background.addChild(lineFifteenPartThree);
+            
+            var boxSixPartOne = draw.rect(25, 510, '#e8ff4c');
+            boxSixPartOne.x = 1070;
+            background.addChild(boxSixPartOne);
+            
+            var boxSixPartTwo = draw.rect(120, 25, '#e8ff4c');
+            boxSixPartTwo.x = 1070;
+            boxSixPartTwo.y = 485;
+            background.addChild(boxSixPartTwo);
+            
+            var boxSixPartThree = draw.rect(25, 500, '#e8ff4c');
+            boxSixPartThree.x = 1190;
+            boxSixPartThree.y = 485;
+            background.addChild(boxSixPartThree);
+            
+            var slotFourBorder = draw.rect(80, 40, '#000000');
+            slotFourBorder.x = 962;
+            slotFourBorder.y = 367;
+            background.addChild(slotFourBorder);
+            
+            var slotFourPort = draw.rect(60, 20, '#333333');
+            slotFourPort.x = 972;
+            slotFourPort.y = 377;
+            background.addChild(slotFourPort);
+            
+            var slotFiveBorder = draw.rect(80, 40, '#000000');
+            slotFiveBorder.x = 962;
+            slotFiveBorder.y = 415;
+            background.addChild(slotFiveBorder);
+            
+            var slotFivePort = draw.rect(60, 20, '#333333');
+            slotFivePort.x = 972;
+            slotFivePort.y = 425;
+            background.addChild(slotFivePort);
+            
+            var slotSixBorder = draw.rect(80, 40, '#000000');
+            slotSixBorder.x = 962;
+            slotSixBorder.y = 463;
+            background.addChild(slotSixBorder);
+            
+            var slotSixPort = draw.rect(60, 20, '#333333');
+            slotSixPort.x = 972;
+            slotSixPort.y = 473;
+            background.addChild(slotSixPort);
+            
+            var chipFive = draw.bitmap('img/chip-4.png');
+            background.addChild(chipFive);
+            chipFive.x = 1125;
+            chipFive.y = 300;
+            chipFive.scaleX = 0.2;
+            chipFive.scaleY = 0.2;
+            
+            var slotSevenBorder = draw.rect(40, 250, '#000000');
+            slotSevenBorder.x = 1115;
+            slotSevenBorder.y = 20;
+            background.addChild(slotSevenBorder);
+            
+            var slotSevenPort = draw.rect(20, 230, '#333333');
+            slotSevenPort.x = 1125;
+            slotSevenPort.y = 30;
+            background.addChild(slotSevenPort);
+            
+            var line16PartOne = draw.line(1180, 0, 1180, 200, '#006700', 3);
+            background.addChild(line16PartOne);
+            
+            var line16PartTwo = draw.line(1180, 200, 1300, 320, '#006700', 3);
+            background.addChild(line16PartTwo);
+            
+            var line16PartThree = draw.line(1300, 320, 1300, 1000, '#006700', 3);
+            background.addChild(line16PartThree);
+            
+            var slotEightBorder = draw.rect(40, 500, '#000000');
+            slotEightBorder.x = 1237;
+            slotEightBorder.y = 500;
+            background.addChild(slotEightBorder);
+            
+            var slotEightPort = draw.rect(20, 480, '#333333');
+            slotEightPort.x = 1247;
+            slotEightPort.y = 510;
+            background.addChild(slotEightPort);
+            
+            var boxSevenPartOne = draw.rect(25, 200, '#e8ff4c');
+            boxSevenPartOne.x = 1200;
+            background.addChild(boxSevenPartOne);
+            
+            var boxSevenPartTwo = draw.rect(120, 25, '#e8ff4c');
+            boxSevenPartTwo.x = 1200;
+            boxSevenPartTwo.y = 175;
+            background.addChild(boxSevenPartTwo);
+            
+            var boxSevenPartThree = draw.rect(25, 1000, '#e8ff4c');
+            boxSevenPartThree.x = 1320,
+            boxSevenPartThree.y = 175;
+            background.addChild(boxSevenPartThree);
+            
+            var line17PartOne = draw.line(1250, 0, 1250, 50, '#006700', 3);
+            background.addChild(line17PartOne);
+            
+            var line17PartTwo = draw.line(1250, 50, 1365, 165, '#006700', 3);
+            background.addChild(line17PartTwo);
+            
+            var line17PartThree = draw.line(1365, 165, 1365, 1000, '#006700', 3);
+            background.addChild(line17PartThree);
+            
+            var line18PartOne = draw.line(1270, 0, 1270, 41, '#006700', 3);
+            background.addChild(line18PartOne);
+            
+            var line18PartTwo = draw.line(1270, 41, 1385, 156, '#006700', 3);
+            background.addChild(line18PartTwo);
+            
+            var line18PartThree = draw.line(1385, 156, 1385, 1000, '#006700', 3);
+            background.addChild(line18PartThree);
+            
+            var line19PartOne = draw.line(1290, 0, 1290, 32, '#006700', 3);
+            background.addChild(line19PartOne);
+            
+            var line19PartTwo = draw.line(1290, 32, 1405, 147, '#006700', 3);
+            background.addChild(line19PartTwo);
+            
+            var line19PartThree = draw.line(1405, 147, 1405, 1000, '#006700', 3);
+            background.addChild(line19PartThree);
+            
+            var boxEight = draw.rect(25, 1000, '#e8ff4c');
+            boxEight.x = 1425
+            background.addChild(boxEight);
             // TODO: 3 - Add a moon and starfield
             
             
