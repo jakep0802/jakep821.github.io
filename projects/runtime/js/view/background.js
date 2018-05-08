@@ -146,18 +146,6 @@ var background = function (window) {
             var backgroundFill = draw.rect(canvasWidth,canvasHeight,'#00972d');
             background.addChild(backgroundFill);
             
-            scoreBackground = draw.rect(300, 25, '#1a1a1a');
-            scoreBackground.x = 1230;
-            background.addChild(scoreBackground);
-            
-            controlBackground = draw.rect(1440, 45, '#1a1a1a');
-            controlBackground.y = 350;
-            background.addChild(controlBackground);
-            
-            floor = draw.rect(1440, 10,'#404040');
-            floor.y = 341;
-            background.addChild(floor);
-            
             chipOne = draw.bitmap('img/chip.png');
             background.addChild(chipOne);
             chipOne.x = 150;
@@ -165,35 +153,35 @@ var background = function (window) {
             chipOne.scaleX = 0.2;
             chipOne.scaleY = 0.2;
             
-            chipTwo = draw.bitmap('img/chip-1.png');
+            chipTwo = draw.bitmap('img/chip.png');
             background.addChild(chipTwo);
             chipTwo.x = 500;
             chipTwo.y = 500;
             chipTwo.scaleX = 0.2;
             chipTwo.scaleY = 0.2;
             
-            chipThree = draw.bitmap('img/chip-2.png');
+            chipThree = draw.bitmap('img/chip.png');
             background.addChild(chipThree);
             chipThree.x = 725;
             chipThree.y = 10;
             chipThree.scaleX = 0.2;
             chipThree.scaleY = 0.2;
             
-            chipFour = draw.bitmap('img/chip-3.png');
+            chipFour = draw.bitmap('img/chip.png');
             background.addChild(chipFour);
             chipFour.x = 1000;
             chipFour.y = 650;
             chipFour.scaleX = 0.2;
             chipFour.scaleY = 0.2;
             
-            chipFive = draw.bitmap('img/chip-4.png');
+            chipFive = draw.bitmap('img/chip.png');
             background.addChild(chipFive);
             chipFive.x = 1125;
             chipFive.y = 300;
             chipFive.scaleX = 0.2;
             chipFive.scaleY = 0.2;
             
-            cornerOnePartOne = draw.rect(100, 25, '#e8ff4c');
+            cornerOnePartOne = draw.rect(110, 25, '#e8ff4c');
             background.addChild(cornerOnePartOne);
             cornerOnePartOne.y = 600;
             
@@ -552,6 +540,18 @@ var background = function (window) {
             ramPortTwo.x = 615;
             ramPortTwo.y = 30;
             background.addChild(ramPortTwo);
+            
+            scoreBackground = draw.rect(300, 25, '#1a1a1a');
+            scoreBackground.x = 1230;
+            background.addChild(scoreBackground);
+            
+            controlBackground = draw.rect(1440, 45, '#1a1a1a');
+            controlBackground.y = 350;
+            background.addChild(controlBackground);
+            
+            floor = draw.rect(1440, 10,'#404040');
+            floor.y = 341;
+            background.addChild(floor);
             // TODO: 5 - Add buildings!     Q: This is before TODO 4 for a reason! Why?
             
             
@@ -568,7 +568,35 @@ var background = function (window) {
             var groundY = ground.y;
             
             // TODO 4: Part 2 - Move the tree!
+            chipOne.x = chipOne.x - 0.2;
+            chipTwo.x = chipTwo.x - 0.2;
+            chipThree.x = chipThree.x - 0.2;
+            chipFour.x = chipFour.x - 0.2;
+            chipFive.x = chipFive.x - 0.2;
             
+            cornerOnePartOne.x = cornerOnePartOne.x - 0.2;
+            cornerOnePartTwo.x = cornerOnePartTwo.x - 0.2;
+            
+            boxOnePartOne.x = boxOnePartTwo.x - 0.2;
+            boxOnePartTwo.x = boxOnePartTwo.x - 0.2;
+            boxOnePartThree.x = boxOnePartThree.x - 0.2;
+            boxTwoPartOne.x = boxTwoPartOne.x - 0.2;
+            boxTwoPartTwo.x = boxTwoPartTwo.x - 0.2;
+            boxTwoPartThree.x = boxTwoPartThree.x - 0.2;
+            boxThree.x = boxThree.x - 0.2;
+            boxFourPartOne.x = boxFourPartOne.x - 0.2;
+            boxFourPartTwo.x = boxFourPartTwo.x - 0.2;
+            boxFourPartThree.x = boxFourPartThree.x - 0.2;
+            boxFivePartOne.x = boxFivePartOne.x - 0.2;
+            boxFivePartTwo.x = boxFivePartTwo.x - 0.2;
+            boxFivePartThree.x = boxFivePartThree.x - 0.2;
+            boxSixPartOne.x = boxSixPartOne.x - 0.2;
+            boxSixPartTwo.x = boxSixPartTwo.x - 0.2;
+            boxSixPartThree.x = boxSixPartThree.x - 0.2;
+            boxSevenPartOne.x = boxSevenPartOne.x - 0.2;
+            boxSevenPartTwo.x = boxSevenPartTwo.x - 0.2;
+            boxSevenPartThree.x = boxSevenPartThree.x - 0.2;
+            boxEight.x = boxEight.x - 0.2;
             // TODO 5: Part 2 - Parallax
             
 
