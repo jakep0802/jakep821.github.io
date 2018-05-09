@@ -107,6 +107,11 @@ var background = function (window) {
         var line19PartTwo;
         var line19PartThree;
         var lineTwentyPartOne;
+        var lineTwentyPartTwo;
+        var lineTwentyPartThree;
+        var lineTwentyOne;
+        var lineTwentyTwo;
+        var lineTwentyThree;
         
         var slotOneBorder;
         var slotOnePort;
@@ -126,6 +131,10 @@ var background = function (window) {
         var slotEightPort;
         var slotNineBorder;
         var slotNinePort;
+        var slotTenBorder;
+        var slotTenPort;
+        var slotElevenBorder;
+        var slotElevenPort;
         var ramSlotOne;
         var ramPortOne;
         var ramSlotTwo;
@@ -572,8 +581,31 @@ var background = function (window) {
             line19PartThree.y = 147;
             background.addChild(line19PartThree);
             
-            lineTwentyPartOne = draw.line(-45, 0, -45, 575, '#006700', 3);
+            lineTwentyPartOne = draw.rect(3, 577, '#006700');
+            lineTwentyPartOne.x = 1573;
             background.addChild(lineTwentyPartOne);
+            
+            lineTwentyPartTwo = draw.bitmap('img/lineTwentyPartTwo.png');
+            lineTwentyPartTwo.x = 1530;
+            lineTwentyPartTwo.y = 575;
+            background.addChild(lineTwentyPartTwo);
+            
+            lineTwentyPartThree = draw.rect(3, 675, '#006700');
+            lineTwentyPartThree.x = 1530;
+            lineTwentyPartThree.y = 625;
+            background.addChild(lineTwentyPartThree);
+            
+            lineTwentyOne = draw.rect(3, 1000, '#006700');
+            lineTwentyOne.x = 1470;
+            background.addChild(lineTwentyOne);
+            
+            lineTwentyTwo = draw.rect(3, 1000, '#006700');
+            lineTwentyTwo.x = 1490;
+            background.addChild(lineTwentyTwo);
+            
+            lineTwentyThree = draw.rect(3, 1000, '#006700');
+            lineTwentyThree.x = 1510;
+            background.addChild(lineTwentyThree);
             
             slotOneBorder = draw.rect(40, 160, '#000000');
             slotOneBorder.x = 293;
@@ -664,6 +696,26 @@ var background = function (window) {
             slotNinePort.x = -55;
             slotNinePort.y = 650;
             background.addChild(slotNinePort);
+            
+            slotTenBorder = draw.rect(40, 270, '#000000');
+            slotTenBorder.x = 1523;
+            slotTenBorder.y = 10;
+            background.addChild(slotTenBorder);
+            
+            slotTenPort = draw.rect(20, 250, '#333333');
+            slotTenPort.x = 1533;
+            slotTenPort.y = 20;
+            background.addChild(slotTenPort);
+            
+            slotElevenBorder = draw.rect(40, 270, '#000000');
+            slotElevenBorder.x = 1523;
+            slotElevenBorder.y = 300;
+            background.addChild(slotElevenBorder);
+            
+            slotElevenPort = draw.rect(20, 250, '#333333');
+            slotElevenPort.x = 1533;
+            slotElevenPort.y = 310;
+            background.addChild(slotElevenPort);
             
             ramSlotOne = draw.rect(40, 425, '#000000');
             ramSlotOne.x = 545;
@@ -797,6 +849,11 @@ var background = function (window) {
             line19PartTwo.x = line19PartTwo.x - 0.3;
             line19PartThree.x = line19PartThree.x - 0.3;
             lineTwentyPartOne.x = lineTwentyPartOne.x - 0.3;
+            lineTwentyPartTwo.x = lineTwentyPartTwo.x - 0.3;
+            lineTwentyPartThree.x = lineTwentyPartThree.x - 0.3;
+            lineTwentyOne.x = lineTwentyOne.x - 0.3;
+            lineTwentyTwo.x = lineTwentyTwo.x - 0.3;
+            lineTwentyThree.x = lineTwentyThree.x - 0.3;
             
             slotOneBorder.x = slotOneBorder.x - 0.3;
             slotOnePort.x = slotOnePort.x - 0.3;
@@ -816,6 +873,10 @@ var background = function (window) {
             slotEightPort.x = slotEightPort.x - 0.3;
             slotNineBorder.x = slotNineBorder.x - 0.3;
             slotNinePort.x = slotNinePort.x - 0.3;
+            slotTenBorder.x = slotTenBorder.x - 0.3;
+            slotTenPort.x = slotTenPort.x - 0.3;
+            slotElevenBorder.x = slotElevenBorder.x - 0.3;
+            slotElevenPort.x = slotElevenPort.x - 0.3;
             
             ramSlotOne.x = ramSlotOne.x - 0.3;
             ramPortOne.x = ramPortOne.x - 0.3;
@@ -1146,6 +1207,31 @@ var background = function (window) {
                 line19PartThree.x = canvasWidth;
             }
             
+            if (lineTwentyPartOne.x < -175) {
+                lineTwentyOne.x = canvasWidth;
+            }
+            
+            if (lineTwentyPartTwo.x < -175) {
+                lineTwentyPartTwo.x = canvasWidth;
+            }
+            
+            if (lineTwentyPartThree.x < -175) {
+                lineTwentyPartThree.x = canvasWidth;
+            }
+            
+            if (lineTwentyOne.x < -175) {
+                lineTwentyOne.x = canvasWidth;
+            }
+            
+            if (lineTwentyTwo.x < -175) {
+                lineTwentyTwo.x = canvasWidth;
+            }
+            
+            if (lineTwentyThree.x < -175) {
+                lineTwentyThree.x = canvasWidth;
+            }
+            
+            
             if (slotOneBorder.x < -175) {
                 slotOneBorder.x = canvasWidth;
             }
@@ -1218,7 +1304,37 @@ var background = function (window) {
                 slotNinePort.x = canvasWidth;
             }
             
+            if (slotTenBorder.x < -175) {
+                slotTenBorder.x = canvasWidth;
+            }
             
+            if (slotTenPort.x < -175) {
+                slotTenPort.x = canvasWidth;
+            }
+            
+            if (slotElevenBorder.x < -175) {
+                slotElevenBorder.x = canvasWidth;
+            }
+            
+            if (slotElevenPort.x < -175) {
+                slotElevenPort.x = canvasWidth;
+            }
+            
+            if (ramSlotOne.x < -175) {
+                ramSlotOne.x = canvasWidth;
+            }
+            
+            if (ramPortOne.x < -175) {
+                ramPortOne.x = canvasWidth;
+            }
+            
+            if (ramSlotTwo.x < -175) {
+                ramSlotTwo.x = canvasWidth;
+            }
+            
+            if (ramPortTwo.x < -175) {
+                ramPortTwo.x = canvasWidth;
+            }
             // TODO 5: Part 2 - Parallax
             
 
