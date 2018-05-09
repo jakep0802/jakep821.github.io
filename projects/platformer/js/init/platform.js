@@ -29,8 +29,11 @@
 
         // ALL YOUR CODE GOES BELOW HERE ///////////////////////////////////////
         
-        platform.create(250, 50);
-        platform.create(115, 300);
+        platform.create(10, 540);
+        platform.create(500, 580);
+        platform.create(400, 340);
+        platform.create(300, 449);
+        platform.create(0, 200);
         
         // ALL YOUR CODE GOES ABOVE HERE ///////////////////////////////////////
         ////////////////////////////////////////////////////////////////////////

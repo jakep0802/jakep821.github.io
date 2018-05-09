@@ -34,9 +34,11 @@
         ////////////////////////////////////////////////////////////////////////
         // ALL YOUR CODE GOES BELOW HERE ///////////////////////////////////////
         
-        collectable.create(type.max, 300, 150, 9.8, 5);
-        collectable.create(type.kennedi, 275, 100, 3, 3.5);
-        collectable.create(type.db, 180, 150, 7, 8);
+        collectable.create(type.grace, 430, 550, 0, 2);
+        collectable.create(type.kennedi, 50, 585, 0, 1);
+        collectable.create(type.max, 800, 500, 0, 5);
+        collectable.create(type.db, 520, 390, 1, 1);
+        collectable.create(type.steve, 620, 270, 0, 0);
         
         // ALL YOUR CODE GOES ABOVE HERE ///////////////////////////////////////
         ////////////////////////////////////////////////////////////////////////

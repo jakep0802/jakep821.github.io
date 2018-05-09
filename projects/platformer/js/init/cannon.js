@@ -23,9 +23,11 @@
         which was giving you errors so I've fixed them :)
         */
         
-        cannon.create.onTop(300); 
-        cannon.create.onRight(300);
-        cannon.create.onLeft(300);
+        cannon.create.onTop(200);
+         
+        cannon.create.onTop(500);
+        
+        cannon.create.onTop(800);
         
         // ALL YOUR CODE GOES ABOVE HERE ///////////////////////////////////////
         ////////////////////////////////////////////////////////////////////////
