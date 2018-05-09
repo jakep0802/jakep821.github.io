@@ -51,6 +51,7 @@ var background = function (window) {
         var boxSevenPartTwo;
         var boxSevenPartThree;
         var boxEight;
+        var boxNine;
         
         var lineOnePartOne;
         var lineOnePartTwo;
@@ -97,7 +98,7 @@ var background = function (window) {
         var line16PartTwo;
         var line16PartThree;
         var line17PartOne;
-        var line17PartTwo
+        var line17PartTwo;
         var line17PartThree;
         var line18PartOne;
         var line18PartTwo;
@@ -105,6 +106,7 @@ var background = function (window) {
         var line19PartOne;
         var line19PartTwo;
         var line19PartThree;
+        var lineTwentyPartOne;
         
         var slotOneBorder;
         var slotOnePort;
@@ -122,6 +124,8 @@ var background = function (window) {
         var slotSevenPort;
         var slotEightBorder;
         var slotEightPort;
+        var slotNineBorder;
+        var slotNinePort;
         var ramSlotOne;
         var ramPortOne;
         var ramSlotTwo;
@@ -282,164 +286,294 @@ var background = function (window) {
             boxEight.x = 1425;
             background.addChild(boxEight);
             
-            lineOnePartOne = draw.line(20, 0, 20, 400, '#006700', 3);
+            boxNine = draw.rect(25, 625, '#e8ff4c');
+            boxNine.x = -20;
+            background.addChild(boxNine);
+            
+            lineOnePartOne = draw.rect(3, 400, '#006700');
+            lineOnePartOne.x = 20;
             background.addChild(lineOnePartOne);
             
-            lineOnePartTwo = draw.line(20, 400, 150, 550, '#006700', 3);
+            lineOnePartTwo = draw.bitmap('img/lineOnePartTwo.png');
+            lineOnePartTwo.x = 20;
+            lineOnePartTwo.y = 400;
             background.addChild(lineOnePartTwo);
             
-            lineOnePartThree = draw.line(150, 550, 150, 1000, '#006700', 3);
+            //lineOnePartTwo = draw.line(20, 400, 150, 550, '#006700', 3);
+            //background.addChild(lineOnePartTwo);
+            
+            lineOnePartThree = draw.rect(3, 450, '#006700');
+            lineOnePartThree.x = 148;
+            lineOnePartThree.y = 550;
             background.addChild(lineOnePartThree);
             
-            lineTwoPartOne = draw.line(40, 0, 40, 393, '#006700', 3);
+            lineTwoPartOne = draw.rect(3, 393, '#006700');
+            lineTwoPartOne.x = 40;
             background.addChild(lineTwoPartOne);
             
-            lineTwoPartTwo = draw.line(40, 393, 170, 543, '#006700', 3);
+            lineTwoPartTwo = draw.bitmap('img/lineOnePartTwo.png');
+            lineTwoPartTwo.x = 40;
+            lineTwoPartTwo.y = 393;
             background.addChild(lineTwoPartTwo);
             
-            lineTwoPartThree = draw.line(170, 543, 170, 1000, '#006700', 3);
+            //lineTwoPartTwo = draw.line(40, 393, 170, 543, '#006700', 3);
+            //background.addChild(lineTwoPartTwo);
+            
+            lineTwoPartThree = draw.rect(3, 457, '#006700');
+            lineTwoPartThree.x = 168;
+            lineTwoPartThree.y = 543;
             background.addChild(lineTwoPartThree);
             
-            lineThreePartOne = draw.line(60, 0, 60, 386, '#006700', 3);
+            lineThreePartOne = draw.rect(3, 386, '#006700');
+            lineThreePartOne.x = 60;
             background.addChild(lineThreePartOne);
             
-            lineThreePartTwo = draw.line(60, 386, 190, 536, '#006700', 3);
+            lineThreePartTwo = draw.bitmap('img/lineOnePartTwo.png');
+            lineThreePartTwo.x = 60;
+            lineThreePartTwo.y = 386;
             background.addChild(lineThreePartTwo);
             
-            lineThreePartThree = draw.line(190, 536, 190, 1000, '#006700', 3);
+            //lineThreePartTwo = draw.line(60, 386, 190, 536, '#006700', 3);
+            //background.addChild(lineThreePartTwo);
+            
+            lineThreePartThree = draw.rect(3, 464, '#006700');
+            lineThreePartThree.x = 188;
+            lineThreePartThree.y = 534;
             background.addChild(lineThreePartThree);
             
-            lineFourPartOne = draw.line(125, 0, 125, 330, '#006700', 3);
+            lineFourPartOne = draw.rect(3, 330, '#006700');
+            lineFourPartOne.x = 125;
             background.addChild(lineFourPartOne);
             
-            lineFourPartTwo = draw.line(125, 330, 255, 330, '#006700', 3);
+            lineFourPartTwo = draw.rect(130, 3, '#006700');
+            lineFourPartTwo.x = 125;
+            lineFourPartTwo.y = 330;
             background.addChild(lineFourPartTwo);
             
-            lineFourPartThree = draw.line(255, 330, 255, 1000, '#006700', 3);
+            lineFourPartThree = draw.rect(3, 670, '#006700');
+            lineFourPartThree.x = 255;
+            lineFourPartThree.y = 330;
             background.addChild(lineFourPartThree);
             
-            lineFivePartOne = draw.line(200, 0, 200, 30, '#006700', 3);
+            lineFivePartOne = draw.rect(3, 30, '#006700');
+            lineFivePartOne.x = 200;
             background.addChild(lineFivePartOne);
             
-            lineFivePartTwo = draw.line(200, 30, 325, 30, '#006700', 3);
+            lineFivePartTwo = draw.rect(125, 3, '#006700');
+            lineFivePartTwo.x = 200;
+            lineFivePartTwo.y = 30;
             background.addChild(lineFivePartTwo);
             
-            lineFivePartThree = draw.line(325, 30, 325, 250, '#006700', 3);
+            lineFivePartThree = draw.rect(3, 223, '#006700');
+            lineFivePartThree.x = 325;
+            lineFivePartThree.y = 30;
             background.addChild(lineFivePartThree);
             
-            lineFivePartFour = draw.line(325, 250, 275, 250, '#006700', 3);
+            lineFivePartFour = draw.rect(50, 3, '#006700');
+            lineFivePartFour.x = 275;
+            lineFivePartFour.y = 250;
             background.addChild(lineFivePartFour);
             
-            lineFivePartFive = draw.line(275, 250, 275, 1000, '#006700', 3);
+            lineFivePartFive = draw.rect(3, 750, '#006700');
+            lineFivePartFive.x = 275;
+            lineFivePartFive.y = 250;
             background.addChild(lineFivePartFive);
             
-            lineSixPartOne = draw.line(400, 0, 400, 525, '#006700', 3);
+            lineSixPartOne = draw.rect(3, 525, '#006700');
+            lineSixPartOne.x = 398;
             background.addChild(lineSixPartOne);
             
-            lineSixPartTwo = draw.line(400, 525, 340, 585, '#006700', 3);
+            lineSixPartTwo = draw.bitmap('img/lineSixPartTwo.png');
+            lineSixPartTwo.x = 340;
+            lineSixPartTwo.y = 525;
             background.addChild(lineSixPartTwo);
             
-            lineSixPartThree = draw.line(340, 585, 340, 1000, '#006700', 3);
+            //lineSixPartTwo = draw.line(400, 525, 340, 585, '#006700', 3);
+            //background.addChild(lineSixPartTwo);
+            
+            lineSixPartThree = draw.rect(3, 415, '#006700');
+            lineSixPartThree.x = 338;
+            lineSixPartThree.y = 585;
             background.addChild(lineSixPartThree);
             
-            lineSeven = draw.line(420, 0, 420, 1000, '#006700', 3);
+            lineSeven = draw.rect(3, 1000, '#006700');
+            lineSeven.x = 420;
             background.addChild(lineSeven);
             
-            lineEight = draw.line(440, 0, 440, 1000, '#006700', 3);
+            lineEight = draw.rect(3, 1000, '#006700');
+            lineEight.x = 440;
             background.addChild(lineEight);
             
-            lineNinePartOne = draw.line(505, 0, 505, 485, '#006700', 3);
+            lineNinePartOne = draw.rect(3, 485, '#006700');
+            lineNinePartOne.x = 505;
             background.addChild(lineNinePartOne);
             
-            lineNinePartTwo = draw.line(505, 485, 665, 485, '#006700', 3);
+            lineNinePartTwo = draw.rect(160, 3, '#006700');
+            lineNinePartTwo.x = 505;
+            lineNinePartTwo.y = 485;
             background.addChild(lineNinePartTwo);
             
-            lineNinePartThree = draw.line(665, 485, 665, 1000, '#006700', 3);
+            lineNinePartThree = draw.rect(3, 515, '#006700');
+            lineNinePartThree.x = 665;
+            lineNinePartThree.y = 485;
             background.addChild(lineNinePartThree);
             
-            lineTenPartOne = draw.line(525, 0, 525, 465, '#006700', 3);
+            lineTenPartOne = draw.rect(3, 465, '#006700');
+            lineTenPartOne.x = 525;
             background.addChild(lineTenPartOne);
             
-            lineTenPartTwo = draw.line(525, 465, 685, 465, '#006700', 3);
+            lineTenPartTwo = draw.rect(160, 3, '#006700');
+            lineTenPartTwo.x = 525;
+            lineTenPartTwo.y = 465;
             background.addChild(lineTenPartTwo);
             
-            lineTenPartThree = draw.line(685, 465, 685, 1000, '#006700', 3);
+            lineTenPartThree = draw.rect(3, 535, '#006700');
+            lineTenPartThree.x = 685;
+            lineTenPartThree.y = 465;
             background.addChild(lineTenPartThree);
             
-            lineEleven = draw.line(705, 0, 705, 1000, '#006700', 3);
+            lineEleven = draw.rect(3, 1000, '#006700');
+            lineEleven.x = 705;
             background.addChild(lineEleven);
             
-            lineTwelvePartOne = draw.line(945, 0, 945, 230, '#006700', 3);
+            lineTwelvePartOne = draw.rect(3, 230, '#006700');
+            lineTwelvePartOne.x = 943;
             background.addChild(lineTwelvePartOne);
             
-            lineTwelvePartTwo = draw.line(945, 230, 780, 395, '#006700', 3);
+            lineTwelvePartTwo = draw.bitmap('img/lineTwelvePartTwo.png');
+            lineTwelvePartTwo.x = 780;
+            lineTwelvePartTwo.y = 230;
             background.addChild(lineTwelvePartTwo);
             
-            lineTwelvePartThree = draw.line(780, 395, 780, 1000, '#006700', 3);
+            //lineTwelvePartTwo = draw.line(945, 230, 780, 395, '#006700', 3);
+            //background.addChild(lineTwelvePartTwo);
+            
+            lineTwelvePartThree = draw.rect(3, 605, '#006700');
+            lineTwelvePartThree.x = 779;
+            lineTwelvePartThree.y = 390;
             background.addChild(lineTwelvePartThree);
             
-            lineThirteenPartOne = draw.line(965, 0, 965, 239, '#006700', 3);
+            lineThirteenPartOne = draw.rect(3, 239, '#006700');
+            lineThirteenPartOne.x = 963;
             background.addChild(lineThirteenPartOne);
             
-            lineThirteenPartTwo = draw.line(965, 239, 802, 402, '#006700', 3);
+            lineThirteenPartTwo = draw.bitmap('img/lineTwelvePartTwo.png');
+            lineThirteenPartTwo.x = 801;
+            lineThirteenPartTwo.y = 238;
             background.addChild(lineThirteenPartTwo);
             
-            lineThirteenPartThree = draw.line(802, 402, 802, 1000, '#006700', 3);
+            //lineThirteenPartTwo = draw.line(965, 239, 802, 402, '#006700', 3);
+            //background.addChild(lineThirteenPartTwo);
+            
+            lineThirteenPartThree = draw.rect(3, 598, '#006700');
+            lineThirteenPartThree.x = 801;
+            lineThirteenPartThree.y = 401;
             background.addChild(lineThirteenPartThree);
             
-            lineFourteenPartOne = draw.line(985, 0, 985, 248, '#006700', 3);
+            lineFourteenPartOne = draw.rect(3, 250, '#006700');
+            lineFourteenPartOne.x = 983;
             background.addChild(lineFourteenPartOne);
             
-            lineFourteenPartTwo = draw.line(985, 248, 910, 325, '#006700', 3);
+            lineFourteenPartTwo = draw.bitmap('img/lineFourteenPartTwo.png');
+            lineFourteenPartTwo.x = 910;
+            lineFourteenPartTwo.y = 248;
             background.addChild(lineFourteenPartTwo);
             
-            lineFourteenPartThree = draw.line(910, 325, 910, 1000, '#006700', 3);
+            //lineFourteenPartTwo = draw.line(985, 248, 910, 325, '#006700', 3);
+            //background.addChild(lineFourteenPartTwo);
+            
+            lineFourteenPartThree = draw.rect(3, 675, '#006700');
+            lineFourteenPartThree.x = 909;
+            lineFourteenPartThree.y = 323;
             background.addChild(lineFourteenPartThree);
             
-            lineFifteenPartOne = draw.line(1050, 0, 1050, 515, '#006700', 3);
+            lineFifteenPartOne = draw.rect(3, 515, '#006700');
+            lineFifteenPartOne.x = 1050;
             background.addChild(lineFifteenPartOne);
             
-            lineFifteenPartTwo = draw.line(1050, 515, 1170, 612, '#006700', 3);
+            lineFifteenPartTwo = draw.bitmap('img/lineFifteenPartTwo.png');
+            lineFifteenPartTwo.x = 1051;
+            lineFifteenPartTwo.y = 515;
             background.addChild(lineFifteenPartTwo);
             
-            lineFifteenPartThree = draw.line(1170, 612, 1170, 1000, '#006700', 3);
+            //lineFifteenPartTwo = draw.line(1050, 515, 1170, 612, '#006700', 3);
+            //background.addChild(lineFifteenPartTwo);
+            
+            lineFifteenPartThree = draw.rect(3, 388, '#006700');
+            lineFifteenPartThree.x = 1170;
+            lineFifteenPartThree.y = 612;
             background.addChild(lineFifteenPartThree);
             
-            line16PartOne = draw.line(1180, 0, 1180, 200, '#006700', 3);
+            line16PartOne = draw.rect(3, 200, '#006700');
+            line16PartOne.x = 1179;
             background.addChild(line16PartOne);
             
-            line16PartTwo = draw.line(1180, 200, 1300, 320, '#006700', 3);
+            line16PartTwo = draw.bitmap('img/lineSixteenPartTwo.png');
+            line16PartTwo.x = 1181;
+            line16PartTwo.y = 200;
             background.addChild(line16PartTwo);
             
-            line16PartThree = draw.line(1300, 320, 1300, 1000, '#006700', 3);
+            //line16PartTwo = draw.line(1180, 200, 1300, 320, '#006700', 3);
+            //background.addChild(line16PartTwo);
+            
+            line16PartThree = draw.rect(3, 680, '#006700');
+            line16PartThree.x = 1299;
+            line16PartThree.y = 320;
             background.addChild(line16PartThree);
             
-            line17PartOne = draw.line(1250, 0, 1250, 50, '#006700', 3);
+            line17PartOne = draw.rect(3, 50, '#006700');
+            line17PartOne.x = 1249;
             background.addChild(line17PartOne);
             
-            line17PartTwo = draw.line(1250, 50, 1365, 165, '#006700', 3);
+            line17PartTwo = draw.bitmap('img/lineSeventeenPartTwo.png');
+            line17PartTwo.x = 1251;
+            line17PartTwo.y = 50;
             background.addChild(line17PartTwo);
             
-            line17PartThree = draw.line(1365, 165, 1365, 1000, '#006700', 3);
+            //line17PartTwo = draw.line(1250, 50, 1365, 165, '#006700', 3);
+            //background.addChild(line17PartTwo);
+            
+            line17PartThree = draw.rect(3, 835, '#006700');
+            line17PartThree.x = 1364;
+            line17PartThree.y = 165;
             background.addChild(line17PartThree);
             
-            line18PartOne = draw.line(1270, 0, 1270, 41, '#006700', 3);
+            line18PartOne = draw.rect(3, 41, '#006700');
+            line18PartOne.x = 1269;
             background.addChild(line18PartOne);
             
-            line18PartTwo = draw.line(1270, 41, 1385, 156, '#006700', 3);
+            line18PartTwo = draw.bitmap('img/lineSeventeenPartTwo.png');
+            line18PartTwo.x = 1271;
+            line18PartTwo.y = 41;
             background.addChild(line18PartTwo);
             
-            line18PartThree = draw.line(1385, 156, 1385, 1000, '#006700', 3);
+            //line18PartTwo = draw.line(1270, 41, 1385, 156, '#006700', 3);
+            //background.addChild(line18PartTwo);
+            
+            line18PartThree = draw.rect(3, 844, '#006700');
+            line18PartThree.x = 1384;
+            line18PartThree.y = 156;
             background.addChild(line18PartThree);
             
-            line19PartOne = draw.line(1290, 0, 1290, 32, '#006700', 3);
+            line19PartOne = draw.rect(3, 32, '#006700');
+            line19PartOne.x = 1289;
             background.addChild(line19PartOne);
             
-            line19PartTwo = draw.line(1290, 32, 1405, 147, '#006700', 3);
+            line19PartTwo = draw.bitmap('img/lineSeventeenPartTwo.png');
+            line19PartTwo.x = 1291;
+            line19PartTwo.y = 32;
             background.addChild(line19PartTwo);
             
-            line19PartThree = draw.line(1405, 147, 1405, 1000, '#006700', 3);
+            //line19PartTwo = draw.line(1290, 32, 1405, 147, '#006700', 3);
+            //background.addChild(line19PartTwo);
+            
+            line19PartThree = draw.rect(3, 853, '#006700');
+            line19PartThree.x = 1404;
+            line19PartThree.y = 147;
             background.addChild(line19PartThree);
+            
+            lineTwentyPartOne = draw.line(-45, 0, -45, 575, '#006700', 3);
+            background.addChild(lineTwentyPartOne);
             
             slotOneBorder = draw.rect(40, 160, '#000000');
             slotOneBorder.x = 293;
@@ -521,6 +655,16 @@ var background = function (window) {
             slotEightPort.y = 510;
             background.addChild(slotEightPort);
             
+            slotNineBorder = draw.rect(150, 40, '#000000');
+            slotNineBorder.x = -65;
+            slotNineBorder.y = 640;
+            background.addChild(slotNineBorder);
+            
+            slotNinePort = draw.rect(130, 20, '#333333');
+            slotNinePort.x = -55;
+            slotNinePort.y = 650;
+            background.addChild(slotNinePort);
+            
             ramSlotOne = draw.rect(40, 425, '#000000');
             ramSlotOne.x = 545;
             ramSlotOne.y = 20;
@@ -597,6 +741,7 @@ var background = function (window) {
             boxSevenPartTwo.x = boxSevenPartTwo.x - 0.3;
             boxSevenPartThree.x = boxSevenPartThree.x - 0.3;
             boxEight.x = boxEight.x - 0.3;
+            boxNine.x = boxNine.x - 0.3;
             
             lineOnePartOne.x = lineOnePartOne.x - 0.3;
             lineOnePartTwo.x = lineOnePartTwo.x - 0.3;
@@ -651,6 +796,7 @@ var background = function (window) {
             line19PartOne.x = line19PartOne.x - 0.3;
             line19PartTwo.x = line19PartTwo.x - 0.3;
             line19PartThree.x = line19PartThree.x - 0.3;
+            lineTwentyPartOne.x = lineTwentyPartOne.x - 0.3;
             
             slotOneBorder.x = slotOneBorder.x - 0.3;
             slotOnePort.x = slotOnePort.x - 0.3;
@@ -668,11 +814,411 @@ var background = function (window) {
             slotSevenPort.x = slotSevenPort.x - 0.3;
             slotEightBorder.x = slotEightBorder.x - 0.3;
             slotEightPort.x = slotEightPort.x - 0.3;
+            slotNineBorder.x = slotNineBorder.x - 0.3;
+            slotNinePort.x = slotNinePort.x - 0.3;
             
             ramSlotOne.x = ramSlotOne.x - 0.3;
             ramPortOne.x = ramPortOne.x - 0.3;
             ramSlotTwo.x = ramSlotTwo.x - 0.3;
             ramPortTwo.x = ramPortTwo.x - 0.3;
+            
+            if (chipOne.x < -175) {
+                chipOne.x = canvasWidth;
+            }
+            
+            if (chipTwo.x < -175) {
+                chipTwo.x = canvasWidth;
+            }
+            
+            if (chipThree.x < -175) {
+                chipThree.x = canvasWidth;
+            }
+            
+            if (chipFour.x < -175) {
+                chipFour.x = canvasWidth;
+            }
+            
+            if (chipFive.x < -175) {
+                chipFive.x = canvasWidth;
+            }
+            
+            if (cornerOnePartOne.x < -175) {
+                cornerOnePartOne.x = canvasWidth;
+            }
+            
+            if (cornerOnePartTwo.x < -175) {
+                cornerOnePartTwo.x = canvasWidth;
+            }
+            
+            if (boxOnePartOne.x < -175) {
+                boxOnePartOne.x = canvasWidth;
+            }
+            
+            if (boxOnePartTwo.x < -175) {
+                boxOnePartTwo.x = canvasWidth;
+            }
+            
+            if (boxOnePartThree.x < -175) {
+                boxOnePartThree.x = canvasWidth;
+            }
+            
+            if (boxTwoPartOne.x < -175) {
+                boxTwoPartOne.x = canvasWidth;
+            }
+            
+            if (boxTwoPartTwo.x < -175) {
+                boxTwoPartTwo.x = canvasWidth;
+            }
+            
+            if (boxTwoPartThree.x < -175) {
+                boxTwoPartThree.x = canvasWidth;
+            }
+            
+            if (boxThree.x < -175) {
+                boxThree.x = canvasWidth;
+            }
+            
+            if (boxFourPartOne.x < -175) {
+                boxFourPartOne.x = canvasWidth;
+            }
+            
+            if (boxFourPartTwo.x < -175) {
+                boxFourPartTwo.x = canvasWidth;
+            }
+            
+            if (boxFourPartThree.x < -175) {
+                boxFourPartThree.x = canvasWidth;
+            }
+            
+            if (boxFivePartOne.x < -175) {
+                boxFivePartOne.x = canvasWidth;
+            }
+            
+            if (boxFivePartTwo.x < -175) {
+                boxFivePartTwo.x = canvasWidth;
+            }
+            
+            if (boxFivePartThree.x < -175) {
+                boxFivePartThree.x = canvasWidth;
+            }
+            
+            if (boxSixPartOne.x < -175) {
+                boxSixPartOne.x = canvasWidth;
+            }
+            
+            if (boxSixPartTwo.x < -175) {
+                boxSixPartTwo.x = canvasWidth;
+            }
+            
+            if (boxSixPartThree.x < -175) {
+                boxSixPartThree.x = canvasWidth;
+            }
+            
+            if (boxSevenPartOne.x < -175) {
+                boxSevenPartOne.x = canvasWidth;
+            }
+            
+            if (boxSevenPartTwo.x < -175) {
+                boxSevenPartTwo.x = canvasWidth;
+            }
+            
+            if (boxSevenPartThree.x < -175) {
+                boxSevenPartThree.x = canvasWidth;
+            }
+            
+            if (boxEight.x < -175) {
+                boxEight.x = canvasWidth;
+            }
+            
+            if (boxNine.x < -175) {
+                boxNine.x = canvasWidth;
+            }
+            
+            if (lineOnePartOne.x < -175) {
+                lineOnePartOne.x = canvasWidth;
+            }
+            
+            if (lineOnePartTwo.x < -175) {
+                lineOnePartTwo.x = canvasWidth;
+            }
+            
+            if (lineOnePartThree.x < -175) {
+                lineOnePartThree.x = canvasWidth;
+            }
+            
+            if (lineTwoPartOne.x < -175) {
+                lineTwoPartOne.x = canvasWidth;
+            }
+            
+            if (lineTwoPartTwo.x < -175) {
+                lineTwoPartTwo.x = canvasWidth;
+            }
+            
+            if (lineTwoPartThree.x < -175) {
+                lineTwoPartThree.x = canvasWidth;
+            }
+            
+            if (lineThreePartOne.x < -175) {
+                lineThreePartOne.x = canvasWidth;
+            }
+            
+            if (lineThreePartTwo.x < -175) {
+                lineThreePartTwo.x = canvasWidth;
+            }
+            
+            if (lineThreePartThree.x < -175) {
+                lineThreePartThree.x = canvasWidth;
+            }
+            
+            if (lineFourPartOne.x < -175) {
+                lineFourPartOne.x = canvasWidth;
+            }
+            
+            if (lineFourPartTwo.x < -175) {
+                lineFourPartTwo.x = canvasWidth;
+            }
+            
+            if (lineFourPartThree.x < -175) {
+                lineFourPartThree.x = canvasWidth;
+            }
+            
+            if (lineFivePartOne.x < -175) {
+                lineFivePartOne.x = canvasWidth;
+            }
+            
+            if (lineFivePartTwo.x < -175) {
+                lineFivePartTwo.x = canvasWidth;
+            }
+            
+            if (lineFivePartThree.x < -175) {
+                lineFivePartThree.x = canvasWidth;
+            }
+            
+            if (lineFivePartFour.x < -175) {
+                lineFivePartFour.x = canvasWidth;
+            }
+            
+            if (lineFivePartFive.x < -175) {
+                lineFivePartFive.x = canvasWidth;
+            }
+            
+            if (lineSixPartOne.x < -175) {
+                lineSixPartOne.x = canvasWidth;
+            }
+            
+            if (lineSixPartTwo.x < -175) {
+                lineSixPartTwo.x = canvasWidth;
+            }
+            
+            if (lineSixPartThree.x < -175) {
+                lineSixPartThree.x = canvasWidth;
+            }
+            
+            if (lineSeven.x < -175) {
+                lineSeven.x = canvasWidth;
+            }
+            
+            if (lineEight.x < -175) {
+                lineEight.x = canvasWidth;
+            }
+            
+            if (lineNinePartOne.x < -175) {
+                lineNinePartOne.x = canvasWidth;
+            }
+            
+            if (lineNinePartTwo.x < -175) {
+                lineNinePartTwo.x = canvasWidth;
+            }
+            
+            if (lineNinePartThree.x < -175) {
+                lineNinePartThree.x = canvasWidth;
+            }
+            
+            if (lineTenPartOne.x < -175) {
+                lineTenPartOne.x = canvasWidth;
+            }
+            
+            if (lineTenPartTwo.x < -175) {
+                lineTenPartTwo.x = canvasWidth;
+            }
+            
+            if (lineTenPartThree.x < -175) {
+                lineTenPartThree.x = canvasWidth;
+            }
+            
+            if (lineEleven.x < -175) {
+                lineEleven.x = canvasWidth;
+            }
+            
+            if (lineTwelvePartOne.x < -175) {
+                lineTwelvePartOne.x = canvasWidth;
+            }
+            
+            if (lineTwelvePartTwo.x < -175) {
+                lineTwelvePartTwo.x = canvasWidth;
+            }
+            
+            if (lineTwelvePartThree.x < -175) {
+                lineTwelvePartThree.x = canvasWidth;
+            }
+            
+            if (lineThirteenPartOne.x < -175) {
+                lineThirteenPartOne.x = canvasWidth;
+            }
+            
+            if (lineThirteenPartTwo.x < -175) {
+                lineThirteenPartTwo.x = canvasWidth;
+            }
+            
+            if (lineThirteenPartThree.x < -175) {
+                lineThirteenPartThree.x = canvasWidth;
+            }
+            
+            if (lineFourteenPartOne.x < -175) {
+                lineFourteenPartOne.x = canvasWidth;
+            }
+            
+            if (lineFourteenPartTwo.x < -175) {
+                lineFourteenPartTwo.x = canvasWidth;
+            }
+            
+            if (lineFourteenPartThree.x < -175) {
+                lineFourteenPartThree.x = canvasWidth;
+            }
+            
+            if (lineFifteenPartOne.x < -175) {
+                lineFifteenPartOne.x = canvasWidth;
+            }
+            
+            if (lineFifteenPartTwo.x < -175) {
+                lineFifteenPartTwo.x = canvasWidth;
+            }
+            
+            if (lineFifteenPartThree.x < -175) {
+                lineFifteenPartThree.x = canvasWidth;
+            }
+            
+            if (line16PartOne.x < -175) {
+                line16PartOne.x = canvasWidth;
+            }
+            
+            if (line16PartTwo.x < -175) {
+                line16PartTwo.x = canvasWidth;
+            }
+            
+            if (line16PartThree.x < -175) {
+                line16PartThree.x = canvasWidth;
+            }
+            
+            if (line17PartOne.x < -175) {
+                line17PartOne.x = canvasWidth;
+            }
+            
+            if (line17PartTwo.x < -175) {
+                line17PartTwo.x = canvasWidth;
+            }
+            
+            if (line17PartThree.x < -175) {
+                line17PartThree.x = canvasWidth;
+            }
+            
+            if (line18PartOne.x < -175) {
+                line18PartOne.x = canvasWidth;
+            }
+            
+            if (line18PartTwo.x < -175) {
+                line18PartTwo.x = canvasWidth;
+            }
+            
+            if (line18PartThree.x < -175) {
+                line18PartThree.x = canvasWidth;
+            }
+            
+            if (line19PartOne.x < -175) {
+                line19PartOne.x = canvasWidth;
+            }
+            
+            if (line19PartTwo.x < -175) {
+                line19PartTwo.x = canvasWidth;
+            }
+            
+            if (line19PartThree.x < -175) {
+                line19PartThree.x = canvasWidth;
+            }
+            
+            if (slotOneBorder.x < -175) {
+                slotOneBorder.x = canvasWidth;
+            }
+            
+            if (slotOnePort.x < -175) {
+                slotOnePort.x = canvasWidth;
+            }
+            
+            if (slotTwoBorder.x < -175) {
+                slotTwoBorder.x = canvasWidth;
+            }
+            
+            if (slotTwoPort.x < -175) {
+                slotTwoPort.x = canvasWidth;
+            }
+            
+            if (slotThreeBorder.x < -175) {
+                slotThreeBorder.x = canvasWidth;
+            }
+            
+            if (slotThreePort.x < -175) {
+                slotThreePort.x = canvasWidth;
+            }
+            
+            if (slotFourBorder.x < -175) {
+                slotFourBorder.x = canvasWidth;
+            }
+            
+            if (slotFourPort.x < -175) {
+                slotFourPort.x = canvasWidth;
+            }
+            
+            if (slotFiveBorder.x < -175) {
+                slotFiveBorder.x = canvasWidth;
+            }
+            
+            if (slotFivePort.x < -175) {
+                slotFivePort.x = canvasWidth;
+            }
+            
+            if (slotSixBorder.x < -175) {
+                slotSixBorder.x = canvasWidth;
+            }
+            
+            if (slotSixPort.x < -175) {
+                slotSixPort.x = canvasWidth;
+            }
+            
+            if (slotSevenBorder.x < -175) {
+                slotSevenPort.x = canvasWidth;
+            }
+            
+            if (slotSevenPort.x < -175) {
+                slotSevenPort.x = canvasWidth;
+            }
+            
+            if (slotEightBorder.x < -175) {
+                slotEightBorder.x = canvasWidth;
+            }
+            
+            if (slotEightPort.x < -175) {
+                slotEightPort.x = canvasWidth;
+            }
+            
+            if (slotNineBorder.x < -175) {
+                slotNineBorder.x = canvasWidth;
+            }
+            
+            if (slotNinePort.x < -175) {
+                slotNinePort.x = canvasWidth;
+            }
+            
+            
             // TODO 5: Part 2 - Parallax
             
 
