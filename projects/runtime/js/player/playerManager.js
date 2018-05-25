@@ -69,7 +69,7 @@
             if (activeKeys[KEYCODE_E]) {
                 player.jumpfly();
             } else if (activeKeys[KEYCODE_W]) {
-                player.jump();
+                player.jumpfly();
             } else if (activeKeys[KEYCODE_Q]) {
                 player.die();
             } else if (activeKeys[KEYCODE_S]) {

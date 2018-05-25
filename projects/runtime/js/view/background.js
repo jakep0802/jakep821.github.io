@@ -156,7 +156,7 @@ var background = function (window) {
             // you should modify this to suit your game
             
             // TODO: 3 - Add a moon and starfield
-            var backgroundFill = draw.rect(canvasWidth,canvasHeight,'#00972d');
+            var backgroundFill = draw.rect(canvasWidth,canvasHeight,'#00972d'/*'#ffffff'*/);
             background.addChild(backgroundFill);
             
             chipOne = draw.bitmap('img/chip.png');
